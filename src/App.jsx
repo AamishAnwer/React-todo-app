@@ -90,9 +90,7 @@ function App() {
           <h1 className="text-4xl text-white mt-8 mb-8 text-left w-screen px-10">
             TODO
           </h1>
-
           <TaskInput addTask={addTask} />
-
           <div className="bg-white rounded mt-4 w-full border-r border-l shadow-lg">
             <ul className="list-items w-full">
               {getFilteredTasks().map((task, index) => (
@@ -147,6 +145,9 @@ function App() {
           </div>
         </div>
       </div>
+      <p className=" text-center mt-12 text-gray-400 text-sm">
+        Drag and drop to reorder list
+      </p>
     </div>
   );
 }
