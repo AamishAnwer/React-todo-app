@@ -85,7 +85,7 @@ function App() {
           alt=""
           className="object-cover h-56 w-full absolute top-0 left-0 right-0 -z-10"
         />
-
+  
         <div className="flex justify-center flex-col z-50 md:max-w-[750px] max-w-[550px] px-10">
           <h1 className="text-4xl text-white mt-8 mb-8 text-left w-screen px-10">
             TODO
@@ -106,36 +106,36 @@ function App() {
                 />
               ))}
             </ul>
-
-            <div className="flex justify-between items-center p-2">
-              <div className="flex-1">
+  
+            <div className="flex flex-col md:flex-row justify-between items-center p-2">
+              <div className="mb-2 md:mb-0">
                 <p className="notify text-start flex">{tasksLeft} items left</p>
               </div>
-
-              <div className="flex gap-4">
+  
+              <div className="flex gap-4 mb-2 md:mb-0">
                 <p
-                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold "
+                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold"
                   onClick={() => updateFilter("all")}
                 >
                   All
                 </p>
                 <p
-                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold "
+                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold"
                   onClick={() => updateFilter("active")}
                 >
                   Active
                 </p>
                 <p
-                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold "
+                  className="cursor-pointer text-gray-400 hover:text-blue-500 font-semibold"
                   onClick={() => updateFilter("completed")}
                 >
                   Completed
                 </p>
               </div>
-
-              <div className="flex-1 text-right">
+  
+              <div>
                 <p
-                  className="cursor-pointer text-gray-400"
+                  className="cursor-pointer text-end text-gray-400"
                   onClick={clearCompletedTasks}
                 >
                   Clear Complete
@@ -145,7 +145,7 @@ function App() {
           </div>
         </div>
       </div>
-      <p className=" text-center mt-12 text-gray-400 text-sm">
+      <p className="text-center mt-12 text-gray-400 text-sm">
         Drag and drop to reorder list
       </p>
     </div>
