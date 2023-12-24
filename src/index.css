@@ -166,3 +166,19 @@ input[type="checkbox"] {
 
   margin-bottom: 14px;
 }
+
+@media (max-width: 768px) {
+  .mobile-filters {
+    display: flex; /* Show on mobile */
+  }
+
+  .desktop-filters {
+    display: none; /* Hide on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-filters {
+    display: none; /* Hide on desktop */
+  }
+}
